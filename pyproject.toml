@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "UBotosos"
+version = "0.1.0"
+description = ""
+authors = ["ArkoJano <arek0092@gmail.com>"]
+
+[tool.poetry.scripts]
+Usos_script = "ubotosos.main:start_usos"
+Pegaz_script = "ubotosos.main:start_pegaz"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+selenium = "^3.141.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
